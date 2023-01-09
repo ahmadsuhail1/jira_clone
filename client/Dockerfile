@@ -4,7 +4,8 @@ ENV NODE_ENV=production
 
 WORKDIR /usr/src/client
 
-COPY package*.json .
+COPY package.json .
+COPY package-lock.json .
 
 RUN npm install
 
